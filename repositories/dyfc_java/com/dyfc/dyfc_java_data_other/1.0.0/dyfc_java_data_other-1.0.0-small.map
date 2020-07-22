@@ -1,0 +1,177 @@
+com.dyfc.data.other.ForecastParser -> com.dyfc.data.other.ForecastParser:
+    20:20:void <init>() -> <init>
+    27:47:java.util.List parse40dData(java.lang.String,java.lang.String) -> parse40dData
+    56:111:java.util.List parse15dData(java.lang.String,java.lang.String) -> parse15dData
+    120:191:java.util.List parse7dData(java.lang.String,java.lang.String) -> parse7dData
+    195:196:void main(java.lang.String[]) -> main
+com.dyfc.data.other.IMGProductParser -> com.dyfc.data.other.IMGProductParser:
+    18:18:void <init>() -> <init>
+    25:52:java.util.List parseDataNMC(java.lang.String) -> parseDataNMC
+com.dyfc.data.other.Other -> com.dyfc.data.other.Other:
+    3:3:void <init>() -> <init>
+    5:7:void main(java.lang.String[]) -> main
+com.dyfc.data.other.PDFUtil -> com.dyfc.data.other.PDFUtil:
+    org.slf4j.Logger logger -> a
+    11:11:void <init>() -> <init>
+    25:27:void convert(java.lang.String,java.lang.String) -> convert
+    12:22:void <clinit>() -> <clinit>
+com.dyfc.data.other.QiXiangKePuProductParser -> com.dyfc.data.other.QiXiangKePuProductParser:
+    15:15:void <init>() -> <init>
+    22:55:java.util.List parseData_CmaKppd(java.lang.String) -> parseData_CmaKppd
+    59:78:java.lang.String parseContent_CmaKppd(java.lang.String) -> parseContent_CmaKppd
+    82:84:java.lang.String handUrl(java.lang.String,java.lang.String) -> handUrl
+    88:92:void main(java.lang.String[]) -> main
+com.dyfc.data.other.SunriseSunset -> com.dyfc.data.other.SunriseSunset:
+    double dfLat -> a
+    double dfLon -> b
+    java.util.Date dateInput -> c
+    double dfTimeZone -> d
+    java.util.Date dateSunrise -> e
+    java.util.Date dateSunset -> f
+    boolean bSunriseToday -> g
+    boolean bSunsetToday -> h
+    boolean bSunUpAllDay -> i
+    boolean bSunDownAllDay -> j
+    boolean bDaytime -> k
+    boolean bSunrise -> l
+    boolean bSunset -> m
+    boolean bGregorian -> n
+    int iJulian -> o
+    int iYear -> p
+    int iMonth -> q
+    int iDay -> r
+    int iCount -> s
+    int iSign -> t
+    double dfHourRise -> u
+    double dfHourSet -> v
+    double dfMinRise -> w
+    double dfMinSet -> x
+    double dfSinLat -> y
+    double dfCosLat -> z
+    double dfZenith -> A
+    java.text.SimpleDateFormat dfmtDateTime -> B
+    java.text.SimpleDateFormat dfmtYear -> C
+    java.text.SimpleDateFormat dfmtMonth -> D
+    java.text.SimpleDateFormat dfmtDay -> E
+    double dfAA1 -> F
+    double dfAA2 -> G
+    double dfDD1 -> H
+    double dfDD2 -> I
+    double dfC0 -> J
+    double dfK1 -> K
+    double dfP -> L
+    double dfJ -> M
+    double dfJ3 -> N
+    double dfA -> O
+    double dfA0 -> P
+    double dfA2 -> Q
+    double dfA5 -> R
+    double dfD0 -> S
+    double dfD1 -> T
+    double dfD2 -> U
+    double dfD5 -> V
+    double dfDA -> W
+    double dfDD -> X
+    double dfH0 -> Y
+    double dfH1 -> Z
+    double dfH2 -> aa
+    double dfL0 -> ab
+    double dfL2 -> ac
+    double dfT -> ad
+    double dfT0 -> ae
+    double dfTT -> af
+    double dfV0 -> ag
+    double dfV1 -> ah
+    double dfV2 -> ai
+    java.util.TimeZone tz -> aj
+    203:270:void <init>(double,double,java.util.Date,double) -> <init>
+    285:618:void doCalculations() -> a
+    631:634:java.util.Date getSunrise() -> getSunrise
+    648:651:java.util.Date getSunset() -> getSunset
+    665:665:boolean isSunrise() -> isSunrise
+    679:679:boolean isSunset() -> isSunset
+    693:693:boolean isSunUp() -> isSunUp
+    707:707:boolean isSunDown() -> isSunDown
+    725:774:boolean isDaytime() -> isDaytime
+com.dyfc.data.other.TQWCity3JParser -> com.dyfc.data.other.TQWCity3JParser:
+    14:14:void <init>() -> <init>
+    21:60:java.util.List parseCity3JData(java.lang.String) -> parseCity3JData
+    64:71:java.util.Set parseData(java.lang.String) -> parseData
+    75:77:void main(java.lang.String[]) -> main
+com.dyfc.data.other.Util -> com.dyfc.data.other.a:
+    11:16:org.apache.http.client.HttpClient getDefaultHttpClient() -> a
+    20:26:org.jsoup.nodes.Element getElement(org.jsoup.select.Elements,int[]) -> a
+com.dyfc.data.other.ZSIndexParser -> com.dyfc.data.other.ZSIndexParser:
+    15:15:void <init>() -> <init>
+    22:64:java.util.List parseZSIndexData(java.lang.String,java.lang.String) -> parseZSIndexData
+    69:70:void main(java.lang.String[]) -> main
+com.dyfc.data.other.vo_outside.City3J -> com.dyfc.data.other.vo_outside.City3J:
+    java.lang.String province_code -> province_code
+    java.lang.String province_name -> province_name
+    java.lang.String city_code -> city_code
+    java.lang.String city_name -> city_name
+    java.lang.String district_code -> district_code
+    java.lang.String district_name -> district_name
+    3:3:void <init>() -> <init>
+    14:16:java.lang.String toString() -> toString
+com.dyfc.data.other.vo_outside.Forecast15d -> com.dyfc.data.other.vo_outside.Forecast15d:
+    java.lang.String max -> max
+    java.lang.String min -> min
+    java.lang.String c1 -> c1
+    java.lang.String c2 -> c2
+    java.util.Date time -> time
+    java.util.Date date -> date
+    java.lang.String wea -> wea
+    java.lang.String w1 -> w1
+    java.lang.String wv1 -> wv1
+    java.lang.String w2 -> w2
+    java.lang.String wv2 -> wv2
+    5:5:void <init>() -> <init>
+com.dyfc.data.other.vo_outside.Forecast40d -> com.dyfc.data.other.vo_outside.Forecast40d:
+    java.lang.String max -> max
+    java.lang.String min -> min
+    java.lang.String c1 -> c1
+    java.lang.String c2 -> c2
+    java.lang.String time -> time
+    java.lang.String date -> date
+    java.lang.String w1 -> w1
+    java.lang.String wd1 -> wd1
+    java.lang.String hmax -> hmax
+    java.lang.String hmin -> hmin
+    java.lang.String maxobs -> maxobs
+    java.lang.String minobs -> minobs
+    java.lang.String hgl -> hgl
+    3:3:void <init>() -> <init>
+com.dyfc.data.other.vo_outside.Forecast7d -> com.dyfc.data.other.vo_outside.Forecast7d:
+    java.lang.String max -> max
+    java.lang.String min -> min
+    java.lang.String c1 -> c1
+    java.lang.String c2 -> c2
+    java.util.Date time -> time
+    java.util.Date date -> date
+    java.lang.String wea -> wea
+    java.lang.String w1 -> w1
+    java.lang.String wv1 -> wv1
+    java.lang.String w2 -> w2
+    java.lang.String wv2 -> wv2
+    5:5:void <init>() -> <init>
+com.dyfc.data.other.vo_outside.IMGProduct -> com.dyfc.data.other.vo_outside.IMGProduct:
+    java.lang.String img_title -> img_title
+    java.lang.String img_url -> img_url
+    java.util.Date img_date -> img_date
+    5:5:void <init>() -> <init>
+com.dyfc.data.other.vo_outside.QiXiangKePuProduct -> com.dyfc.data.other.vo_outside.QiXiangKePuProduct:
+    java.lang.String title -> title
+    java.lang.String date -> date
+    java.lang.String url -> url
+    java.lang.String content -> content
+    3:3:void <init>() -> <init>
+    15:15:java.lang.String toString() -> toString
+com.dyfc.data.other.vo_outside.ZSIndex -> com.dyfc.data.other.vo_outside.ZSIndex:
+    java.lang.String index_city -> index_city
+    java.lang.String index_type -> index_type
+    java.lang.String index_name -> index_name
+    java.lang.String index_hint -> index_hint
+    java.lang.String index_des_s -> index_des_s
+    java.util.Date index_create -> index_create
+    5:5:void <init>() -> <init>
