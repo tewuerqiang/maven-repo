@@ -13,11 +13,20 @@ com.dyfc.data.cimiss.CIMISS -> com.dyfc.data.cimiss.CIMISS:
     48:52:java.util.Map getNewParamsMap() -> a
     56:56:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseForecast() -> parseForecast
     60:60:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseForecastHour() -> parseForecastHour
-    65:65:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeHourAll() -> parseRealtimeHourAll
-    69:71:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeHour(java.lang.String) -> parseRealtimeHour
-    75:77:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeMinute(java.lang.String) -> parseRealtimeMinute
-    81:82:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseWarn(java.lang.String,int) -> parseWarn
-    87:92:void main(java.lang.String[]) -> main
+    64:66:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeYer(java.lang.String,java.lang.Integer) -> parseRealtimeYer
+    70:72:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeMon(java.lang.String,java.lang.Integer) -> parseRealtimeMon
+    76:78:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeDay(java.lang.String,java.lang.Integer) -> parseRealtimeDay
+    82:84:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeHor(java.lang.String,java.lang.Integer) -> parseRealtimeHor
+    89:89:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeHourAll() -> parseRealtimeHourAll
+    94:96:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeHour(java.lang.String) -> parseRealtimeHour
+    100:102:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeMinute(java.lang.String) -> parseRealtimeMinute
+    106:107:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseWarn(java.lang.String,java.lang.Integer) -> parseWarn
+    115:115:void main(java.lang.String[]) -> main
+com.dyfc.data.cimiss.CIMISS_DES -> com.dyfc.data.cimiss.CIMISS_DES:
+    5:5:void <init>() -> <init>
+    9:13:void setApi_host(java.lang.String) -> setApi_host
+    18:22:void setApi_user(java.lang.String) -> setApi_user
+    27:31:void setApi_pwd(java.lang.String) -> setApi_pwd
 com.dyfc.data.cimiss.CM_Forecast -> com.dyfc.data.cimiss.a:
     java.io.File forecast_dir -> a
     36:84:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseForecast(java.lang.String,java.util.Map) -> a
@@ -34,18 +43,29 @@ com.dyfc.data.cimiss.CM_Forecast -> com.dyfc.data.cimiss.a:
     51:51:boolean lambda$parseForecast$0(com.dyfc.data.cimiss.vo_inside.SEVP_WEFC_CHN$DS) -> a
     24:24:void <clinit>() -> <clinit>
 com.dyfc.data.cimiss.CM_Realtime -> com.dyfc.data.cimiss.b:
-    31:81:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeHourAll(java.lang.String,java.util.Map) -> a
-    91:138:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeHour(java.lang.String,java.util.Map) -> b
-    149:209:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeMinute(java.lang.String,java.util.Map) -> c
-    214:223:java.util.Date get10MinDate(java.util.Date) -> a
-    186:186:boolean lambda$parseRealtimeMinute$3(long,com.dyfc.data.cimiss.vo_inside.SURF_CHN_PRE_MIN$DS) -> a
-    182:182:int lambda$parseRealtimeMinute$2(com.dyfc.data.cimiss.vo_inside.SURF_CHN_PRE_MIN$DS,com.dyfc.data.cimiss.vo_inside.SURF_CHN_PRE_MIN$DS) -> a
-    110:110:int lambda$parseRealtimeHour$1(com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR$DS,com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR$DS) -> a
-    53:53:int lambda$parseRealtimeHourAll$0(com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR$DS,com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR$DS) -> b
-    1008:1013:java.lang.Float com.dyfc.data.cimiss.Util.valid_value_f(java.lang.Float,int):8:13 -> a
-    1017:1022:org.apache.http.client.HttpClient com.dyfc.data.cimiss.Util.getDefaultHttpClient():17:22 -> a
+    28:84:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeYer(java.lang.String,java.util.Map,java.lang.Integer) -> a
+    94:152:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeMon(java.lang.String,java.util.Map,java.lang.Integer) -> b
+    162:221:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeDay(java.lang.String,java.util.Map,java.lang.Integer) -> c
+    231:289:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeHor(java.lang.String,java.util.Map,java.lang.Integer) -> d
+    300:350:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeHourAll(java.lang.String,java.util.Map) -> a
+    361:408:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeHour(java.lang.String,java.util.Map) -> b
+    418:478:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseRealtimeMinute(java.lang.String,java.util.Map) -> c
+    483:492:java.util.Date get10MinDate(java.util.Date) -> a
+    455:455:boolean lambda$parseRealtimeMinute$7(long,com.dyfc.data.cimiss.vo_inside.SURF_CHN_PRE_MIN$DS) -> a
+    451:451:int lambda$parseRealtimeMinute$6(com.dyfc.data.cimiss.vo_inside.SURF_CHN_PRE_MIN$DS,com.dyfc.data.cimiss.vo_inside.SURF_CHN_PRE_MIN$DS) -> a
+    380:380:int lambda$parseRealtimeHour$5(com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR$DS,com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR$DS) -> a
+    322:322:int lambda$parseRealtimeHourAll$4(com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR$DS,com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR$DS) -> b
+    250:250:int lambda$parseRealtimeHor$3(com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR$DS,com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR$DS) -> c
+    181:181:int lambda$parseRealtimeDay$2(com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_DAY$DS,com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_DAY$DS) -> a
+    113:113:int lambda$parseRealtimeMon$1(com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_MON$DS,com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_MON$DS) -> a
+    47:47:int lambda$parseRealtimeYer$0(com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_YER$DS,com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_YER$DS) -> a
+    1024:1029:java.lang.Float com.dyfc.data.cimiss.Util.valid_value_f(java.lang.Float,int):24:29 -> a
+    1033:1042:java.util.Date com.dyfc.data.cimiss.Util.valid_value_hour(int,int,int,java.lang.String):33:42 -> a
+    1046:1054:java.util.Date com.dyfc.data.cimiss.Util.valid_value_day(int,int,java.lang.String):46:54 -> a
+    1058:1066:java.util.Date com.dyfc.data.cimiss.Util.valid_value_mon(int,java.lang.String):58:66 -> a
+    1070:1075:org.apache.http.client.HttpClient com.dyfc.data.cimiss.Util.getDefaultHttpClient():70:75 -> a
 com.dyfc.data.cimiss.CM_Warn -> com.dyfc.data.cimiss.c:
-    26:76:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseWarnAll(java.lang.String,java.util.Map,java.lang.String,int) -> a
+    26:76:com.dyfc.data.cimiss.vo_outside.CM_BaseVO parseWarnAll(java.lang.String,java.util.Map,java.lang.String,java.lang.Integer) -> a
     48:48:boolean lambda$parseWarnAll$1(java.lang.String,com.dyfc.data.cimiss.vo_inside.DISA_CHN_ALERT_INFO$DS) -> a
     46:46:int lambda$parseWarnAll$0(com.dyfc.data.cimiss.vo_inside.DISA_CHN_ALERT_INFO$DS,com.dyfc.data.cimiss.vo_inside.DISA_CHN_ALERT_INFO$DS) -> a
 com.dyfc.data.cimiss.vo_inside.CM_Base -> com.dyfc.data.cimiss.vo_inside.a:
@@ -104,6 +124,34 @@ com.dyfc.data.cimiss.vo_inside.SEVP_WEFC_CHN$DS -> com.dyfc.data.cimiss.vo_insid
     java.util.Date Datetime -> Datetime
     java.lang.String FILE_NAME_ORIG -> FILE_NAME_ORIG
     7:7:void <init>() -> <init>
+com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_DAY -> com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_DAY:
+    6:6:void <init>() -> <init>
+com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_DAY$DS -> com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_DAY$DS:
+    java.lang.String Station_Name -> Station_Name
+    java.lang.String Station_Id_C -> Station_Id_C
+    java.util.Date Datetime -> Datetime
+    java.lang.Float PRS_Avg -> PRS_Avg
+    java.lang.Float PRS_Max -> PRS_Max
+    java.lang.String PRS_Max_OTime -> PRS_Max_OTime
+    java.lang.Float PRS_Min -> PRS_Min
+    java.lang.String PRS_Min_OTime -> PRS_Min_OTime
+    java.lang.Float TEM_Avg -> TEM_Avg
+    java.lang.Float TEM_Max -> TEM_Max
+    java.lang.String TEM_Max_OTime -> TEM_Max_OTime
+    java.lang.Float TEM_Min -> TEM_Min
+    java.lang.String TEM_Min_OTime -> TEM_Min_OTime
+    java.lang.Float RHU_Avg -> RHU_Avg
+    java.lang.Float RHU_Min -> RHU_Min
+    java.lang.String RHU_Min_OTIME -> RHU_Min_OTIME
+    java.lang.Float PRE_Max_1h -> PRE_Max_1h
+    java.lang.String PRE_Max_1h_OTime -> PRE_Max_1h_OTime
+    java.lang.Float WIN_D_S_Max -> WIN_D_S_Max
+    java.lang.Float WIN_S_Max -> WIN_S_Max
+    java.lang.String WIN_S_Max_OTime -> WIN_S_Max_OTime
+    java.lang.Float WIN_D_INST_Max -> WIN_D_INST_Max
+    java.lang.Float WIN_S_Inst_Max -> WIN_S_Inst_Max
+    java.lang.String WIN_S_INST_Max_OTime -> WIN_S_INST_Max_OTime
+    7:7:void <init>() -> <init>
 com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR -> com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR:
     6:6:void <init>() -> <init>
 com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR$DS -> com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR$DS:
@@ -111,18 +159,80 @@ com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_HOR$DS -> com.dyfc.data.cimiss.vo_in
     java.lang.String Station_Id_C -> Station_Id_C
     java.util.Date Datetime -> Datetime
     java.lang.Float PRE_1h -> PRE_1h
+    java.lang.Float PRE_3h -> PRE_3h
+    java.lang.Float PRE_6h -> PRE_6h
+    java.lang.Float PRE_12h -> PRE_12h
+    java.lang.Float PRE_24h -> PRE_24h
     java.lang.Float PRS -> PRS
     java.lang.Float RHU -> RHU
     java.lang.Float TEM -> TEM
-    java.lang.Float WIN_D_INST -> WIN_D_INST
-    java.lang.Float WIN_S_INST -> WIN_S_INST
     java.lang.Float TEM_Max -> TEM_Max
     java.lang.Float TEM_Min -> TEM_Min
     java.lang.Float PRS_Max -> PRS_Max
     java.lang.Float PRS_Min -> PRS_Min
     java.lang.Float RHU_Min -> RHU_Min
+    java.lang.Float WIN_D_INST -> WIN_D_INST
+    java.lang.Float WIN_S_INST -> WIN_S_INST
+    java.lang.Float WIN_D_S_Max -> WIN_D_S_Max
+    java.lang.Float WIN_S_Max -> WIN_S_Max
     java.lang.Float VIS_Min -> VIS_Min
     java.lang.Float VIS -> VIS
+    7:7:void <init>() -> <init>
+com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_MON -> com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_MON:
+    6:6:void <init>() -> <init>
+com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_MON$DS -> com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_MON$DS:
+    java.lang.String Station_Name -> Station_Name
+    java.lang.String Station_Id_C -> Station_Id_C
+    java.util.Date Datetime -> Datetime
+    java.lang.Float PRS_Avg -> PRS_Avg
+    java.lang.Float PRS_Max -> PRS_Max
+    java.lang.String PRS_Max_ODay_C -> PRS_Max_ODay_C
+    java.lang.Float PRS_Min -> PRS_Min
+    java.lang.String PRS_Min_ODay_C -> PRS_Min_ODay_C
+    java.lang.Float TEM_Avg -> TEM_Avg
+    java.lang.Float TEM_Max -> TEM_Max
+    java.lang.String TEM_Max_ODay_C -> TEM_Max_ODay_C
+    java.lang.Float TEM_Min -> TEM_Min
+    java.lang.String TEM_Min_ODay_C -> TEM_Min_ODay_C
+    java.lang.Float RHU_Avg -> RHU_Avg
+    java.lang.Float RHU_Min -> RHU_Min
+    java.lang.String RHU_Min_ODay_C -> RHU_Min_ODay_C
+    java.lang.Float PRE_Max_Day -> PRE_Max_Day
+    java.lang.String PRE_Max_ODay_C -> PRE_Max_ODay_C
+    java.lang.Float WIN_D_S_Max_C -> WIN_D_S_Max_C
+    java.lang.Float WIN_S_Max -> WIN_S_Max
+    java.lang.String WIN_S_Max_ODay_C -> WIN_S_Max_ODay_C
+    java.lang.Float WIN_D_INST_Max_C -> WIN_D_INST_Max_C
+    java.lang.Float WIN_S_Inst_Max -> WIN_S_Inst_Max
+    java.lang.String WIN_S_INST_Max_ODay_C -> WIN_S_INST_Max_ODay_C
+    7:7:void <init>() -> <init>
+com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_YER -> com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_YER:
+    6:6:void <init>() -> <init>
+com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_YER$DS -> com.dyfc.data.cimiss.vo_inside.SURF_CHN_MUL_YER$DS:
+    java.lang.String Station_Name -> Station_Name
+    java.lang.String Station_Id_C -> Station_Id_C
+    java.util.Date Datetime -> Datetime
+    java.lang.Float PRS_Avg -> PRS_Avg
+    java.lang.Float PRS_Max -> PRS_Max
+    java.lang.String PRS_Max_Odate -> PRS_Max_Odate
+    java.lang.Float PRS_Min -> PRS_Min
+    java.lang.String PRS_Min_Odate -> PRS_Min_Odate
+    java.lang.Float TEM_Avg -> TEM_Avg
+    java.lang.Float TEM_Max -> TEM_Max
+    java.lang.String V12011_067 -> V12011_067
+    java.lang.Float TEM_Min -> TEM_Min
+    java.lang.String V12012_067 -> V12012_067
+    java.lang.Float RHU_Avg -> RHU_Avg
+    java.lang.Float RHU_Min -> RHU_Min
+    java.lang.String V13007_067 -> V13007_067
+    java.lang.Float PRE_Max_Day -> PRE_Max_Day
+    java.lang.String V13052_067 -> V13052_067
+    java.lang.Float WIN_D_S_Max_C -> WIN_D_S_Max_C
+    java.lang.Float WIN_S_Max -> WIN_S_Max
+    java.lang.String V11042_067 -> V11042_067
+    java.lang.Float WIN_D_INST_Max_C -> WIN_D_INST_Max_C
+    java.lang.Float WIN_S_Inst_Max -> WIN_S_Inst_Max
+    java.lang.String WIN_S_INST_Max_ODate_C -> WIN_S_INST_Max_ODate_C
     7:7:void <init>() -> <init>
 com.dyfc.data.cimiss.vo_inside.SURF_CHN_PRE_MIN -> com.dyfc.data.cimiss.vo_inside.SURF_CHN_PRE_MIN:
     6:6:void <init>() -> <init>
@@ -196,6 +306,63 @@ com.dyfc.data.cimiss.vo_outside.CM_ForecastVO$ItemVO -> com.dyfc.data.cimiss.vo_
     java.lang.Float two_wind_d -> two_wind_d
     java.lang.Float two_wind_v -> two_wind_v
     38:38:void <init>() -> <init>
+com.dyfc.data.cimiss.vo_outside.CM_RealtimeDayVO -> com.dyfc.data.cimiss.vo_outside.CM_RealtimeDayVO:
+    java.lang.String station_name -> station_name
+    java.util.Date datetime -> datetime
+    java.lang.String station_code -> station_code
+    java.lang.Integer year -> year
+    java.lang.Integer mon -> mon
+    java.lang.Integer day -> day
+    java.lang.Float prs_avg -> prs_avg
+    java.lang.Float prs_max -> prs_max
+    java.util.Date prs_max_otime -> prs_max_otime
+    java.lang.Float prs_min -> prs_min
+    java.util.Date prs_min_otime -> prs_min_otime
+    java.lang.Float tem_avg -> tem_avg
+    java.lang.Float tem_max -> tem_max
+    java.util.Date tem_max_otime -> tem_max_otime
+    java.lang.Float tem_min -> tem_min
+    java.util.Date tem_min_otime -> tem_min_otime
+    java.lang.Float rhu_avg -> rhu_avg
+    java.lang.Float rhu_min -> rhu_min
+    java.util.Date rhu_min_otime -> rhu_min_otime
+    java.lang.Float pre_max_1h -> pre_max_1h
+    java.util.Date pre_max_1h_otime -> pre_max_1h_otime
+    java.lang.Float win_d_s_max -> win_d_s_max
+    java.lang.Float win_s_max -> win_s_max
+    java.util.Date win_s_max_otime -> win_s_max_otime
+    java.lang.Float win_d_inst_max -> win_d_inst_max
+    java.lang.Float win_s_inst_max -> win_s_inst_max
+    java.util.Date win_s_inst_max_otime -> win_s_inst_max_otime
+    5:5:void <init>() -> <init>
+com.dyfc.data.cimiss.vo_outside.CM_RealtimeHorVO -> com.dyfc.data.cimiss.vo_outside.CM_RealtimeHorVO:
+    java.lang.String station_name -> station_name
+    java.lang.String station_code -> station_code
+    java.util.Date datetime -> datetime
+    java.lang.Integer year -> year
+    java.lang.Integer mon -> mon
+    java.lang.Integer day -> day
+    java.lang.Integer hour -> hour
+    java.lang.Float pre_1h -> pre_1h
+    java.lang.Float pre_3h -> pre_3h
+    java.lang.Float pre_6h -> pre_6h
+    java.lang.Float pre_12h -> pre_12h
+    java.lang.Float pre_24h -> pre_24h
+    java.lang.Float prs -> prs
+    java.lang.Float rhu -> rhu
+    java.lang.Float tem -> tem
+    java.lang.Float tem_max -> tem_max
+    java.lang.Float tem_min -> tem_min
+    java.lang.Float prs_max -> prs_max
+    java.lang.Float prs_min -> prs_min
+    java.lang.Float rhu_min -> rhu_min
+    java.lang.Float vis_min -> vis_min
+    java.lang.Float vis -> vis
+    java.lang.Float win_d_inst -> win_d_inst
+    java.lang.Float win_s_inst -> win_s_inst
+    java.lang.Float win_d_s_max -> win_d_s_max
+    java.lang.Float win_s_max -> win_s_max
+    5:5:void <init>() -> <init>
 com.dyfc.data.cimiss.vo_outside.CM_RealtimeHourVO -> com.dyfc.data.cimiss.vo_outside.CM_RealtimeHourVO:
     java.lang.String station_name -> station_name
     java.lang.String station_code -> station_code
@@ -213,12 +380,67 @@ com.dyfc.data.cimiss.vo_outside.CM_RealtimeHourVO -> com.dyfc.data.cimiss.vo_out
     java.lang.Float rhu_min -> rhu_min
     java.lang.Float vis_min -> vis_min
     java.lang.Float vis -> vis
-    5:5:void <init>() -> <init>
+    9:9:void <init>() -> <init>
 com.dyfc.data.cimiss.vo_outside.CM_RealtimeMinuteVO -> com.dyfc.data.cimiss.vo_outside.CM_RealtimeMinuteVO:
     java.lang.String station_name -> station_name
     java.lang.String station_code -> station_code
     java.util.Date datetime -> datetime
     java.lang.Float pre -> pre
+    5:5:void <init>() -> <init>
+com.dyfc.data.cimiss.vo_outside.CM_RealtimeMonVO -> com.dyfc.data.cimiss.vo_outside.CM_RealtimeMonVO:
+    java.lang.String station_name -> station_name
+    java.util.Date datetime -> datetime
+    java.lang.String station_code -> station_code
+    java.lang.Integer year -> year
+    java.lang.Integer mon -> mon
+    java.lang.Float prs_avg -> prs_avg
+    java.lang.Float prs_max -> prs_max
+    java.util.Date prs_max_oday_c -> prs_max_oday_c
+    java.lang.Float prs_min -> prs_min
+    java.util.Date prs_min_oday_c -> prs_min_oday_c
+    java.lang.Float tem_avg -> tem_avg
+    java.lang.Float tem_max -> tem_max
+    java.util.Date tem_max_oday_c -> tem_max_oday_c
+    java.lang.Float tem_min -> tem_min
+    java.util.Date tem_min_oday_c -> tem_min_oday_c
+    java.lang.Float rhu_avg -> rhu_avg
+    java.lang.Float rhu_min -> rhu_min
+    java.util.Date rhu_min_oday_c -> rhu_min_oday_c
+    java.lang.Float pre_max_day -> pre_max_day
+    java.util.Date pre_max_oday_c -> pre_max_oday_c
+    java.lang.Float win_d_s_max_c -> win_d_s_max_c
+    java.lang.Float win_s_max -> win_s_max
+    java.util.Date win_s_max_oday_c -> win_s_max_oday_c
+    java.lang.Float win_d_inst_max_c -> win_d_inst_max_c
+    java.lang.Float win_s_inst_max -> win_s_inst_max
+    java.util.Date win_s_inst_max_oday_c -> win_s_inst_max_oday_c
+    5:5:void <init>() -> <init>
+com.dyfc.data.cimiss.vo_outside.CM_RealtimeYerVO -> com.dyfc.data.cimiss.vo_outside.CM_RealtimeYerVO:
+    java.lang.String station_name -> station_name
+    java.util.Date datetime -> datetime
+    java.lang.String station_code -> station_code
+    java.lang.Integer year -> year
+    java.lang.Float prs_avg -> prs_avg
+    java.lang.Float prs_max -> prs_max
+    java.util.Date prs_max_odate -> prs_max_odate
+    java.lang.Float prs_min -> prs_min
+    java.util.Date prs_min_odate -> prs_min_odate
+    java.lang.Float tem_avg -> tem_avg
+    java.lang.Float tem_max -> tem_max
+    java.util.Date tem_max_odate -> tem_max_odate
+    java.lang.Float tem_min -> tem_min
+    java.util.Date tem_min_odate -> tem_min_odate
+    java.lang.Float rhu_avg -> rhu_avg
+    java.lang.Float rhu_min -> rhu_min
+    java.util.Date rhu_min_odate -> rhu_min_odate
+    java.lang.Float pre_max_day -> pre_max_day
+    java.util.Date pre_max_day_odate -> pre_max_day_odate
+    java.lang.Float win_d_s_max_c -> win_d_s_max_c
+    java.lang.Float win_s_max -> win_s_max
+    java.util.Date win_s_max_odate -> win_s_max_odate
+    java.lang.Float win_d_inst_max_c -> win_d_inst_max_c
+    java.lang.Float win_s_inst_max -> win_s_inst_max
+    java.util.Date win_s_inst_max_odate_c -> win_s_inst_max_odate_c
     5:5:void <init>() -> <init>
 com.dyfc.data.cimiss.vo_outside.CM_WarnVO -> com.dyfc.data.cimiss.vo_outside.CM_WarnVO:
     java.util.Date datetime -> datetime

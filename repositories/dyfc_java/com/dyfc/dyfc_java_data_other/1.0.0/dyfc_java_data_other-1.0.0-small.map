@@ -1,3 +1,17 @@
+com.dyfc.data.other.AQIParser -> com.dyfc.data.other.AQIParser:
+    org.slf4j.Logger logger -> a
+    18:18:void <init>() -> <init>
+    22:39:java.util.List parseAQIData(java.lang.String,java.lang.String,java.lang.String) -> parseAQIData
+    1043:1051:java.util.List parse(java.lang.String):43:51 -> parseAQIData
+    1043:1051:java.util.List parseAQIData(java.lang.String,java.lang.String,java.lang.String):31 -> parseAQIData
+    62:77:java.util.List parseNMGAQIData(java.lang.String) -> parseNMGAQIData
+    81:89:java.util.List parseNMG(java.lang.String) -> a
+    95:97:void main(java.lang.String[]) -> main
+    19:19:void <clinit>() -> <clinit>
+com.dyfc.data.other.AQIParser$1 -> com.dyfc.data.other.AQIParser$1:
+    45:45:void <init>() -> <init>
+com.dyfc.data.other.AQIParser$2 -> com.dyfc.data.other.AQIParser$2:
+    83:83:void <init>() -> <init>
 com.dyfc.data.other.ForecastParser -> com.dyfc.data.other.ForecastParser:
     20:20:void <init>() -> <init>
     27:47:java.util.List parse40dData(java.lang.String,java.lang.String) -> parse40dData
@@ -6,7 +20,7 @@ com.dyfc.data.other.ForecastParser -> com.dyfc.data.other.ForecastParser:
     195:196:void main(java.lang.String[]) -> main
 com.dyfc.data.other.IMGProductParser -> com.dyfc.data.other.IMGProductParser:
     18:18:void <init>() -> <init>
-    25:52:java.util.List parseDataNMC(java.lang.String) -> parseDataNMC
+    25:58:java.util.List parseDataNMC(java.lang.String) -> parseDataNMC
 com.dyfc.data.other.Other -> com.dyfc.data.other.Other:
     3:3:void <init>() -> <init>
     5:7:void main(java.lang.String[]) -> main
@@ -105,6 +119,45 @@ com.dyfc.data.other.ZSIndexParser -> com.dyfc.data.other.ZSIndexParser:
     15:15:void <init>() -> <init>
     22:64:java.util.List parseZSIndexData(java.lang.String,java.lang.String) -> parseZSIndexData
     69:70:void main(java.lang.String[]) -> main
+com.dyfc.data.other.vo_outside.AQI -> com.dyfc.data.other.vo_outside.AQI:
+    java.util.Date time_point -> time_point
+    java.lang.String station_code -> station_code
+    java.lang.String position_name -> position_name
+    java.lang.String area -> area
+    java.lang.String primary_pollutant -> primary_pollutant
+    java.lang.String quality -> quality
+    float aqi -> aqi
+    float co -> co
+    float co_24h -> co_24h
+    float no2 -> no2
+    float no2_24h -> no2_24h
+    float o3 -> o3
+    float o3_24h -> o3_24h
+    float o3_8h -> o3_8h
+    float o3_8h_24h -> o3_8h_24h
+    float pm10 -> pm10
+    float pm10_24h -> pm10_24h
+    float pm2_5 -> pm2_5
+    float pm2_5_24h -> pm2_5_24h
+    float so2 -> so2
+    float so2_24h -> so2_24h
+    5:5:void <init>() -> <init>
+com.dyfc.data.other.vo_outside.AQI_nmg -> com.dyfc.data.other.vo_outside.AQI_nmg:
+    java.util.Date timestamp -> timestamp
+    java.lang.String code -> code
+    java.lang.String name -> name
+    int aqi -> aqi
+    int PM25 -> PM25
+    int PM10 -> PM10
+    int O3 -> O3
+    int SO2 -> SO2
+    int NO2 -> NO2
+    int CO -> CO
+    java.lang.String quality -> quality
+    java.lang.String area -> area
+    5:5:void <init>() -> <init>
+    20:32:void calcQuality() -> calcQuality
+    34:48:void calcArea() -> calcArea
 com.dyfc.data.other.vo_outside.City3J -> com.dyfc.data.other.vo_outside.City3J:
     java.lang.String province_code -> province_code
     java.lang.String province_name -> province_name

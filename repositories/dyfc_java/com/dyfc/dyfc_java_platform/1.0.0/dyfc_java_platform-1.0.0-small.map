@@ -19,6 +19,11 @@ com.dyfc.platform.database.AbstractDao -> com.dyfc.platform.database.AbstractDao
     226:227:java.util.List qryObjList(java.lang.String,java.util.Map,java.lang.Class) -> qryObjList
     238:239:java.util.List pagingObjList(java.lang.String,int,int,java.util.Map,java.lang.Class) -> pagingObjList
     250:251:java.lang.Object qryObj(java.lang.String,java.util.Map,java.lang.Class) -> qryObj
+com.dyfc.platform.database.BasicDataSource -> com.dyfc.platform.database.BasicDataSource:
+    5:5:void <init>() -> <init>
+    9:13:void setUrl(java.lang.String) -> setUrl
+    18:22:void setUsername(java.lang.String) -> setUsername
+    27:31:void setPassword(java.lang.String) -> setPassword
 com.dyfc.platform.database.SingleTableDao -> com.dyfc.platform.database.SingleTableDao:
     9:9:void <init>() -> <init>
     12:14:int addNewRecord(com.dyfc.platform.database.TableBean) -> addNewRecord
@@ -48,18 +53,26 @@ com.dyfc.platform.database.SingleTablePersistUtils -> com.dyfc.platform.database
     1217:1244:java.lang.String getSqlUpdate(java.lang.String,java.util.Map,java.util.Map,com.dyfc.platform.database.TableBean):217:244 -> updateRecordColumnsBySqlConditions
     1217:1244:int updateRecordColumnsBySqlConditions(com.dyfc.platform.database.AbstractDao,com.dyfc.platform.database.TableBean):83 -> updateRecordColumnsBySqlConditions
     97:100:int deleteRecordBySqlConditions(com.dyfc.platform.database.AbstractDao,com.dyfc.platform.database.TableBean) -> deleteRecordBySqlConditions
-    1255:1270:java.lang.String getSqlDelete(java.lang.String,java.util.Map):255:270 -> deleteRecordBySqlConditions
-    1255:1270:int deleteRecordBySqlConditions(com.dyfc.platform.database.AbstractDao,com.dyfc.platform.database.TableBean):98 -> deleteRecordBySqlConditions
+    1255:1278:java.lang.String getSqlDelete(java.lang.String,java.util.Map):255:278 -> deleteRecordBySqlConditions
+    1255:1278:int deleteRecordBySqlConditions(com.dyfc.platform.database.AbstractDao,com.dyfc.platform.database.TableBean):98 -> deleteRecordBySqlConditions
     111:113:int clearTable(com.dyfc.platform.database.AbstractDao,com.dyfc.platform.database.TableBean) -> clearTable
-    1280:1282:java.lang.String getSqlClearTable(java.lang.String):280:282 -> clearTable
-    1280:1282:int clearTable(com.dyfc.platform.database.AbstractDao,com.dyfc.platform.database.TableBean):111 -> clearTable
+    1288:1290:java.lang.String getSqlClearTable(java.lang.String):288:290 -> clearTable
+    1288:1290:int clearTable(com.dyfc.platform.database.AbstractDao,com.dyfc.platform.database.TableBean):111 -> clearTable
     126:129:com.dyfc.platform.database.TableBean getRecordByPKMap(com.dyfc.platform.database.AbstractDao,com.dyfc.platform.database.TableBean,java.util.Map) -> getRecordByPKMap
     141:145:java.util.List getRecordListBySqlConditions(com.dyfc.platform.database.AbstractDao,com.dyfc.platform.database.TableBean) -> getRecordListBySqlConditions
     157:162:int recordNumberBySqlConditions(com.dyfc.platform.database.AbstractDao,com.dyfc.platform.database.TableBean) -> recordNumberBySqlConditions
-    1318:1332:java.lang.String getSqlCount(java.lang.String,java.util.Map):318:332 -> recordNumberBySqlConditions
-    1318:1332:int recordNumberBySqlConditions(com.dyfc.platform.database.AbstractDao,com.dyfc.platform.database.TableBean):158 -> recordNumberBySqlConditions
-    293:307:java.lang.String getSqlSelect(java.lang.String,java.util.Map) -> a
+    1334:1356:java.lang.String getSqlCount(java.lang.String,java.util.Map):334:356 -> recordNumberBySqlConditions
+    1334:1356:int recordNumberBySqlConditions(com.dyfc.platform.database.AbstractDao,com.dyfc.platform.database.TableBean):158 -> recordNumberBySqlConditions
+    301:323:java.lang.String getSqlSelect(java.lang.String,java.util.Map) -> a
     16:16:void <clinit>() -> <clinit>
+com.dyfc.platform.database.SqlConditionValue -> com.dyfc.platform.database.SqlConditionValue:
+    java.lang.Object value -> a
+    java.lang.String operation -> b
+    9:12:void <init>(java.lang.String,java.lang.Object) -> <init>
+    15:15:java.lang.Object getValue() -> getValue
+    19:19:java.lang.String getOperation() -> getOperation
+    23:24:void setValue(java.lang.Object) -> setValue
+    27:28:void setOperation(java.lang.String) -> setOperation
 com.dyfc.platform.database.SqlTemplateUtil -> com.dyfc.platform.database.SqlTemplateUtil:
     com.dyfc.platform.database.SqlTemplateUtil ourInstance -> a
     org.slf4j.Logger logger -> logger
@@ -102,19 +115,39 @@ com.dyfc.platform.utiltools.DateUtil -> com.dyfc.platform.utiltools.DateUtil:
     java.lang.String TIME_FORMAT -> TIME_FORMAT
     17:17:void <init>() -> <init>
     23:25:java.util.Calendar getNewCalendar(long) -> getNewCalendar
-    29:29:java.sql.Date utilDate2SqlDate(java.util.Date) -> utilDate2SqlDate
-    33:33:java.sql.Timestamp utilDate2SqlTimestamp(java.util.Date) -> utilDate2SqlTimestamp
-    37:37:java.util.Date sqlDate2UtilDate(java.sql.Date) -> sqlDate2UtilDate
-    41:41:java.util.Date sqlTimestamp2UtilDate(java.sql.Timestamp) -> sqlTimestamp2UtilDate
-    45:51:java.util.Date getNowDate(java.lang.String) -> getNowDate
-    56:56:java.sql.Date getNowSqlDate() -> getNowSqlDate
-    60:60:java.sql.Timestamp getNowSqlTimestamp() -> getNowSqlTimestamp
-    72:75:java.lang.String getWeekdayChineseStrByDate(java.util.Date) -> getWeekdayChineseStrByDate
-    87:94:boolean equalsTimestamp(java.sql.Timestamp,java.sql.Timestamp) -> equalsTimestamp
+    29:31:java.sql.Date utilDate2SqlDate(java.util.Date) -> utilDate2SqlDate
+    35:37:java.sql.Timestamp utilDate2SqlTimestamp(java.util.Date) -> utilDate2SqlTimestamp
+    41:43:java.util.Date sqlDate2UtilDate(java.sql.Date) -> sqlDate2UtilDate
+    47:49:java.util.Date sqlTimestamp2UtilDate(java.sql.Timestamp) -> sqlTimestamp2UtilDate
+    53:59:java.util.Date getNowDate(java.lang.String) -> getNowDate
+    64:64:java.sql.Date getNowSqlDate() -> getNowSqlDate
+    68:68:java.sql.Timestamp getNowSqlTimestamp() -> getNowSqlTimestamp
+    80:83:java.lang.String getWeekdayChineseStrByDate(java.util.Date) -> getWeekdayChineseStrByDate
+    95:102:boolean equalsTimestamp(java.sql.Timestamp,java.sql.Timestamp) -> equalsTimestamp
 com.dyfc.platform.utiltools.Des3Util -> com.dyfc.platform.utiltools.Des3Util:
+    java.lang.String c0 -> a
+    java.lang.String c1 -> b
+    java.lang.String c2 -> c
+    java.lang.String c3 -> d
+    java.lang.String c4 -> e
+    java.lang.String c5 -> f
+    java.lang.String c6 -> g
     18:18:void <init>() -> <init>
-    29:38:java.lang.String encode(java.lang.String,java.lang.String,java.lang.String) -> encode
-    49:59:java.lang.String decode(java.lang.String,java.lang.String,java.lang.String) -> decode
+    36:45:java.lang.String encode(java.lang.String,java.lang.String,java.lang.String) -> encode
+    49:49:java.lang.String encode(java.lang.String) -> encode
+    60:70:java.lang.String decode(java.lang.String,java.lang.String,java.lang.String) -> decode
+    74:74:java.lang.String decode(java.lang.String) -> decode
+    78:78:java.lang.String defSecretKey() -> a
+    82:82:java.lang.String defIv() -> b
+    86:87:void setC0(java.lang.String) -> setC0
+    90:91:void setC1(java.lang.String) -> setC1
+    94:95:void setC2(java.lang.String) -> setC2
+    98:99:void setC3(java.lang.String) -> setC3
+    102:103:void setC4(java.lang.String) -> setC4
+    106:107:void setC5(java.lang.String) -> setC5
+    110:111:void setC6(java.lang.String) -> setC6
+    114:120:void main(java.lang.String[]) -> main
+    20:26:void <clinit>() -> <clinit>
 com.dyfc.platform.utiltools.FileUtil -> com.dyfc.platform.utiltools.FileUtil:
     9:9:void <init>() -> <init>
     19:22:java.io.File checkMkdir(java.io.File) -> checkMkdir
@@ -123,6 +156,7 @@ com.dyfc.platform.utiltools.FileUtil -> com.dyfc.platform.utiltools.FileUtil:
     57:67:void filterFilesByDays(java.util.List,java.io.File,int) -> filterFilesByDays
     76:85:java.io.File getUserDirWithChild(java.lang.String[]) -> getUserDirWithChild
     96:121:java.lang.String getStringFromInputStream(java.io.InputStream,java.lang.String) -> getStringFromInputStream
+    132:146:void saveAsFileWriter(java.lang.String,java.lang.String) -> saveAsFileWriter
 com.dyfc.platform.utiltools.FreemarkerUtil -> com.dyfc.platform.utiltools.FreemarkerUtil:
     10:10:void <init>() -> <init>
     21:28:boolean process(java.lang.String,java.util.Map,java.io.File) -> process
@@ -163,10 +197,12 @@ com.dyfc.platform.utiltools.ImageUtil -> com.dyfc.platform.utiltools.ImageUtil:
     java.lang.String GIF -> GIF
     java.lang.String PNG -> PNG
     java.lang.String BMP -> BMP
-    12:12:void <init>() -> <init>
-    32:54:void reduceImageByRatio(java.lang.String,java.lang.String,int,int) -> reduceImageByRatio
-    67:76:void reduceImageByTarget(java.lang.String,java.lang.String,int,int) -> reduceImageByTarget
-    88:100:void converter(java.io.File,java.lang.String,java.io.File) -> converter
+    13:13:void <init>() -> <init>
+    33:55:void reduceImageByRatio(java.lang.String,java.lang.String,int,int) -> reduceImageByRatio
+    68:91:void reduceImageByRatioPNG(java.lang.String,java.lang.String,int,int) -> reduceImageByRatioPNG
+    104:113:void reduceImageByTarget(java.lang.String,java.lang.String,int,int) -> reduceImageByTarget
+    127:136:void reduceImageByTargetPNG(java.lang.String,java.lang.String,int,int) -> reduceImageByTargetPNG
+    149:161:void converter(java.io.File,java.lang.String,java.io.File) -> converter
 com.dyfc.platform.utiltools.MD5Util -> com.dyfc.platform.utiltools.MD5Util:
     17:18:void <init>() -> <init>
     33:37:boolean validate16BitMd5WithOriginalString(java.lang.String,java.lang.String) -> validate16BitMd5WithOriginalString
